@@ -1,0 +1,8 @@
+GET https://fakestoreapi.com/products/
+
+###
+GET https://bot.kibuti.co.tz
+
+
+###
+GET https://api.onlinestores.kibuti.co.tz/products
