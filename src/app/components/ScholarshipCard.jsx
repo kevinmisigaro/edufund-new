@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const ScholarshipCard = ({ title, description }) => {
   return (
@@ -25,18 +26,16 @@ const ScholarshipCard = ({ title, description }) => {
           <p>{description}</p>
         </div>
         <div className="pt-5 text-base font-semibold leading-7">
-          <p>
-            <a
-              href="#"
-              className="text-sky-500 transition-all duration-300 group-hover:text-white"
-            >
+          <p className="h-8 px-2 w-fit rounded-xl bg-blue-500/30 items-center justify-center">
+            <Link to={"/reports"} className="text-blue-500 hover:text-blue-600">
               Learn more &rarr;
-            </a>
+            </Link>
           </p>
         </div>
       </div>
     </div>
   );
 };
+
 
 export default ScholarshipCard;

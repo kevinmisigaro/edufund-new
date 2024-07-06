@@ -16,7 +16,7 @@ import ProfileCard from "../components/ProfileCard";
 import Partners from "../components/Partners";
 import VideoWidget from "../components/VideoWidget";
 import { HowWeAreShapingEducation } from "../sections/HowWeAreShapingEducation";
-
+import Banner from "../components/Banner";
 function Home() {
   const [isLoading, setIsLoading] = useState(true);
 
@@ -50,9 +50,10 @@ function Home() {
           {/* <Form /> */}
           {/* <Form2 /> */}
           {/* <Partners /> */}
-          <Faqs />
+          {/* <Faqs /> */}
           {/* <DrawerDemo/> */}
           <Footer />
+          <Banner/>
           <Toaster />
           <CustomCursor />
         </div>

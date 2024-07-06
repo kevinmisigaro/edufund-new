@@ -23,7 +23,7 @@ function About() {
           Join our mission to widen access to education for Africa's future
           talent. Donate to our Ubuntu Community Fund to help us provide funds
           to support African students at home and abroad to achieve their
-          educational goals
+          educational goals.
         </p>
       </div>
 

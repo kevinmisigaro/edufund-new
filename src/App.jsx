@@ -11,6 +11,8 @@ import CustomCursor from "./app/components/CustomCursor";
 import About from "./app/pages/About";
 import Donation from "./app/pages/Donation";
 import Reports from "./app/pages/Reports";
+import Products from "./app/pages/Products";
+
 function App() {
   useEffect(() => {
     const handleContextMenu = (e) => {
@@ -34,6 +36,7 @@ function App() {
         <Route path="/Reports" element={<Reports />} />
         <Route path="*" element={<NotFound />} />
         <Route path="/fundraiser" element={<Fundraiser />} />
+        <Route path="/Products" element={<Products />} />
       </Routes>
       <CustomCursor />
     </>

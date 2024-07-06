@@ -2,9 +2,8 @@ import React, { useCallback, useState } from "react";
 import { PieChart, Pie, Sector } from "recharts";
 
 const data = [
-  { name: "Donated", value: 1000 },
-  { name: "Remaining", value: 9000 },
-
+  { name: "Donated", value: 0 },
+  { name: "Remaining", value: 1000000 },
 ];
 
 const renderActiveShape = ({
@@ -31,6 +30,32 @@ const renderActiveShape = ({
   const ex = mx + (cos >= 0 ? 1 : -1) * 22;
   const ey = my;
   const textAnchor = cos >= 0 ? "start" : "end";
+
+  function formatMoney(value) {
+    function roundup(value) {
+        if (value < 1000) {
+            return Math.ceil(value / 10) * 10;
+        } else if (value < 1000000) {
+            return Math.ceil(value / 1000) * 1000;
+        } else {
+            return Math.ceil(value / 1000000) * 1000000;
+        }
+    }
+
+    // Round up the value
+    const roundedValue = roundup(value);
+
+    // Format the rounded value
+    if (roundedValue >= 1000000) {
+        // To avoid showing .00 for whole millions
+        const millionValue = (roundedValue / 1000000);
+        return Number.isInteger(millionValue) ? millionValue + 'M' : millionValue.toFixed(2) + 'M';
+    } else if (roundedValue >= 1000) {
+        return (roundedValue / 1000).toFixed(0) + 'K';
+    } else {
+        return roundedValue.toString();
+    }
+}
 
   return (
     <g>
@@ -66,7 +91,7 @@ const renderActiveShape = ({
         y={ey}
         textAnchor={textAnchor}
         fill="#e6e6e6"
-      >{`£ ${value/1000} k`}</text>
+      >{`£ ${formatMoney(value)}`}</text>
       <text
         x={ex + (cos >= 0 ? 1 : -1) * 12}
         y={ey}
@@ -90,7 +115,7 @@ export default function Graph() {
   );
 
   return (
-    <PieChart width={320} height={400} >
+    <PieChart width={320} height={400}>
       <Pie
         activeIndex={activeIndex}
         activeShape={renderActiveShape}

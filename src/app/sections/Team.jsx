@@ -202,35 +202,43 @@ import ProfileCard from "../components/ProfileCard";
 import tonis from "../../assets/images/team/tosin.jpg";
 import mercy from "../../assets/images/team/mercy.jpg";
 import francis from "../../assets/images/team/francis.jpg";
+import Ifeolu from "../../assets/images/team/ifeouli.jpg";
 const Team = () => {
   const profiles = [
     {
       name: "Tosin Adebisi",
-      title: " Director Edufund",
+      title: " Co-founder and Director, Strategy and Business Development",
       description:
-        "Tosin is an edupreneur, trainer, and coach. Currently, he is the Programme Manager for the Programme for African Leadership at the Firoz Lalji Institute for Africa. Previously, he served as Senior International Lead at the University of Sussex, focusing on strategy development and stakeholder engagement. With over 10 years of experience in higher education, he has advanced internationalisation, learning and development, employee engagement, and student experience. He received the Sussex Spirit Award in 2020. Tosin is passionate about empowering minority students and recently founded ASPIRE, a mentoring scheme for minority ethnic students in UK universities.",
+        "Tosin is a seasoned edupreneur and cultural catalyst currently leading the Programme for African Leadership (PfAL) at the London School of Economics. With over 15 years of experience in higher education, he previously served as Senior International Lead at the University of Sussex, focusing on strategy development and stakeholder engagement across Africa and the Middle East. Recognized for his contributions, he was named among The PIE’s ‘Top 50 Voices of International Education in Europe’ in 2023 and has received two Excellence in Education Awards.Passionate about equitable access to education, Tosin advocates for minority students and designs person-centered strategies to empower youth as future leaders. He co-founded initiatives like Edufund and Pitch my Dissertation to enhance study and career opportunities. Additionally, he excels in inclusive leadership and innovation facilitation, collaborating with organizations such as UUKi, CIS, and the British Council to advance education and youth empowerment globally.",
       image: tonis,
     },
     {
       name: "Mercy Gilbert",
-      title: "Director EduFund",
+      title: "Director, Development and Partnerships",
       description:
         "Mercy is a renowned entrepreneur, philanthropist, and advocate for empowerment, notably within Africa and the African diaspora. She founded Gilbert Media Group and BABFORUM, establishing herself in media and international relations. In 2023, Mercy was honored with the International Woman of the Year award at the 11th Onyx Media Awards for her leadership and contributions. As Chairman of a Conservative Ward in the UK, she wields significant political influence. Mercy collaborates with top UK universities and US Congresswomen to provide scholarships for Black students and is launching a program to send 5,000 Role Models to the White House. Originally from Zimbabwe, she champions Africa's potential and promotes opportunities and development post-Covid. Mercy is committed to empowering African generations through initiatives that foster international collaboration and leadership.",
       image: mercy,
     },
     {
       name: "Francis Omoroije",
-      title: "Director Edufund",
+      title: "Co-founder and Director, Operations and Technology",
       description:
         "Francis is a seasoned professional in entrepreneurship, venture capital, and business development, currently serving as Managing Partner at Ennovate Ventures. His career spans leadership roles in ventures and co-founding initiatives, demonstrating his prowess in launching and nurturing successful businesses. Francis also brings expertise in consulting and recruitment, with a focus on fostering talent and digital skills development among youth in Africa. He is a passionate advocate for African investment opportunities, regularly speaking at international events and contributing to community development and knowledge sharing initiatives.",
       image: francis,
+    },
+    {
+      name: "Dr. Olubunmi Ifeolu Oluronbi",
+      title: "Policy and Programmes Manager Edufund",
+      description:
+        "Dr Olubunmi Ifeolu Oluronbi is a medical doctor and policy professional based in London, United Kingdom, with a strong commitment to empowering Africa, particularly in healthcare and education. She holds an MD from Kharkiv National Medical University in Ukraine and is currently pursuing an MSc in Global Health Policy at the London School of Economics and Political Science. Dr. Ifeolu has extensive clinical experience in Nigeria and is fluent in English, Yoruba, and has proficiency in Russian.Beyond academia, Dr. Ifeolu is actively engaged in leadership roles and community initiatives. She serves as a Project Consultant for the Future of Work Webinar series and was a Logistics Officer for the LSE Africa Summit 2024. Her contributions include enhancing educational resilience and preparing young professionals for the job market in Africa.Recognized for her achievements, Dr. Ifeolu has received awards such as the 2nd place in the Black History Month Literary competition at LSE and People's Choice Award from the Programme for African Leadership. Outside of work, she enjoys reading, traveling, and music.",
+      image: Ifeolu,
     },
   ];
 
   return (
     <>
       <h1 className="text-white font-kingshare font-semibold text-3xl text-center mb-4 md:mb-8 lg:mb-16 xl:mb-24">
-        The team behind our success
+      Meet the Team
       </h1>
       <div className="w-full relative bg-pattern-dots dark:bg-gray-800 py-20 flex flex-wrap justify-center items-center gap-2">
         <div

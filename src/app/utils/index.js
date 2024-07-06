@@ -33,22 +33,22 @@ export const faqs = [
   {
     id: 1,
     question: "What is the duration for the fundraiser?",
-    answer: "The duration is for 2 weeks from the 31st till the 15th."
+    answer: "The fundraiser will be on a rolling basis our current target is £10k  the first cycle will be by the 25th of July, 2024. "
   },
   {
     id: 2,
     question: "When will applications for funding be open?",
-    answer: "Applications will be open 2 weeks from the fundraiser launch date, starting from 16th June 2024."
+    answer: "Applications for funding will be open from the 15th of July, 2024"
   },
   {
     id: 3,
     question: "When would applicants be contacted?",
-    answer: "Applicants will be contacted 7 days after they apply."
+    answer: "Applicants will be contacted 7 days after they apply"
   },
   {
     id: 4,
     question: "When will funding disbursement commence?",
-    answer: "Funding disbursement will commence once applications are received, followed by verification of documents and student status."
+    answer: "Funding disbursement will commence after the student verification process has been completed ( applications are received, followed by verification of documents, student status and need for funding)."
   },
   {
     id: 5,

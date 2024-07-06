@@ -117,7 +117,7 @@ const Articles = () => {
   return (
     <div className="max-w-screen-xl mx-auto p-5 sm:p-10 md:p-16">
       <h1 className="font-kingshare text-3xl font-semibold text-center my-4">
-        Some blogs to keep you updated
+      News and Opportunities
       </h1>
       <div className=" mb-5 flex justify-between text-sm">
         <div className="text-slate-100 flex items-center pb-2 pr-2 border-b-2 border-slate-100 uppercase">

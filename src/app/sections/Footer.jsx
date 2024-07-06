@@ -1,8 +1,11 @@
-import React from "react";
+import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
-import {MailIcon} from 'lucide-react';
-
+import { MailIcon } from "lucide-react";
+import terms from "../../assets/docs/terms.pdf";
+import privacy from "../../assets/docs/privacy.pdf";
 const Footer = () => {
+  const [showPdf, setShowPdf] = useState(false);
+  const [pdfUrl, setPdfUrl] = useState("");
   const scholarshipLinks = [
     { to: "#/apply", text: "Apply Now" },
     { to: "#/eligibility", text: "Eligibility Criteria" },
@@ -10,24 +13,30 @@ const Footer = () => {
   ];
 
   const resourcesLinks = [
-    { to: "#/faqs", text: "FAQs" },
-    { to: "#/scholarships", text: "Financial support" },
-    { to: "#/success-stories", text: "Success stories" },
+    { to: "/products/#faqs", text: "FAQs" },
+    { to: "#", text: "Financial support" },
+    { to: "#", text: "Success stories" },
   ];
 
   const aboutLinks = [
     { to: "#/about-us", text: "About Us" },
     { to: "#/contact", text: "Contact Us" },
     { to: "#/team", text: "Our Team" },
+    { to: "#/support", text: "support Us" },
   ];
 
   const policyLinks = [
-    { to: "/terms", text: "Terms of Service" },
-    { to: "/privacy", text: "Privacy Policy" },
+    { to: terms, text: "Terms of Service" },
+    { to: privacy, text: "Privacy Policy" },
   ];
 
+  const handlePdfOpen = (url) => {
+    setPdfUrl(url);
+    setShowPdf(true);
+  };
+  
   return (
-    <footer className="bg-black border-t-4 border-neutral-600/30"  id="contact">
+    <footer className="bg-black border-t-4 border-neutral-600/30" id="contact">
       <div className="container mx-auto p-0 md:p-8 xl:px-0">
         <div className="mx-auto max-w-7xl px-6 pb-10 pt-16">
           <div className="xl:grid xl:grid-cols-3 xl:gap-8">
@@ -50,7 +59,7 @@ const Footer = () => {
               </div>
               <div className="max-w-md pr-16 text-md text-gray-200">
                 Empowering students to achieve their dreams through
-                comprehensive Financial Support opportunities and resources.
+                comprehensive financial support opportunities and resources.
               </div>
               <div className="flex space-x-2">
                 <a
@@ -93,7 +102,7 @@ const Footer = () => {
                   className="text-gray-200 hover:text-gray-200"
                 >
                   <span className="sr-only">Email</span>
-                 <MailIcon/>
+                  <MailIcon />
                 </a>
               </div>
             </div>
@@ -156,15 +165,47 @@ const Footer = () => {
                   <h3 className="text-md font-semibold leading-6 text-white">
                     Policy
                   </h3>
-                  <ul role="list" className="mt-6 space-y-4">
+                  {/* <ul role="list" className="mt-6 space-y-4">
                     {policyLinks.map((link) => (
                       <li key={link.to}>
+                      {link.external ? (
+                        <a
+                          href={link.to}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="text-md leading-6 text-gray-300 hover:text-gray-50"
+                        >
+                          {link.text}
+                        </a>
+                      ) : (
                         <NavLink
                           to={link.to}
                           className="text-md leading-6 text-gray-300 hover:text-gray-50"
                         >
                           {link.text}
                         </NavLink>
+                      )}
+                    </li>
+                    ))}
+                  </ul> */}
+                  <ul role="list" className="mt-6 space-y-4">
+                    {policyLinks.map((link) => (
+                      <li key={link.to}>
+                        {/* <a
+                          href={link.to}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="text-md leading-6 text-gray-300 hover:text-gray-50"
+                        >
+                          {link.text}
+                        </a> */}
+                        <a
+                          href="#"
+                          className="text-md leading-6 text-gray-300 hover:text-gray-50"
+                          onClick={() => handlePdfOpen(link.to)}
+                        >
+                          {link.text}
+                        </a>
                       </li>
                     ))}
                   </ul>
@@ -190,7 +231,29 @@ const Footer = () => {
           </div>
         </div>
       </div>
+      <PdfModal
+        show={showPdf}
+        onClose={() => setShowPdf(false)}
+        pdfUrl={pdfUrl}
+      />
     </footer>
+  );
+};
+
+const PdfModal = ({ show, onClose, pdfUrl }) => {
+  if (!show) {
+    return null;
+  }
+
+  return (
+    <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50">
+      <div className="bg-white p-4 rounded-md w-11/12 h-5/6 relative">
+        <button onClick={onClose} className="absolute top-2 right-2 text-black">
+          Close
+        </button>
+        <iframe src={pdfUrl} title="PDF Viewer" className="w-full h-full" />
+      </div>
+    </div>
   );
 };
 

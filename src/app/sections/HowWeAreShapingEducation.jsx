@@ -28,7 +28,7 @@ export function HowWeAreShapingEducation() {
         </h2>
         <p className="text-slate-100 text-lg text-center md:w-[70%] md:mx-[15%] my-4">
           EduFund is on mission to creating a productive workforce for Africa,
-          by enabling every young person access decent level of education
+          by enabling every young person access quality level of education
           through our community financing solutions.
         </p>
       </div>
