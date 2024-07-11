@@ -1,7 +1,17 @@
 import React from "react";
 import Nav from "../components/Nav";
 import Footer from "../sections/Footer";
-
+import {
+  Drawer,
+  DrawerClose,
+  DrawerContent,
+  DrawerDescription,
+  DrawerFooter,
+  DrawerHeader,
+  DrawerTitle,
+  DrawerTrigger,
+} from "@/components/ui/drawer";
+import DonationForm from "../components/form/DonationForm";
 function Donation() {
   return (
     <div className="bg-pattern w-full min-h-screen">
@@ -76,13 +86,38 @@ export function Hero() {
               students to best universities globally within minutes.
             </p>
             <div class="mt-5 flex items-center justify-center gap-x-6">
-              <a
+              {/* <a
                 href="/register"
                 class="rounded-md bg-sky-500 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-sky-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-sky-400"
                 rel="noreferrer"
               >
                 Donate Now →
-              </a>
+              </a> */}
+              {/* <div className="w-full flex flex-row items-center justify-center"> */}
+                <Drawer className="bg-neutral-800  border-none outline-none">
+                  <DrawerTrigger asChild>
+                    <button className="button mt-4">
+                      Donate now
+                      <svg
+                        fill="currentColor"
+                        viewBox="0 0 24 24"
+                        className="icon"
+                      >
+                        <path
+                          clip-rule="evenodd"
+                          d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25zm4.28 10.28a.75.75 0 000-1.06l-3-3a.75.75 0 10-1.06 1.06l1.72 1.72H8.25a.75.75 0 000 1.5h5.69l-1.72 1.72a.75.75 0 101.06 1.06l3-3z"
+                          fill-rule="evenodd"
+                        ></path>
+                      </svg>
+                    </button>
+                  </DrawerTrigger>
+                  <DrawerContent className="bg-neutral-800 border-none outline-none">
+                    <div className="mx-auto w-full">
+                      <DonationForm />
+                    </div>
+                  </DrawerContent>
+                </Drawer>
+              {/* </div> */}
             </div>
           </div>
         </div>

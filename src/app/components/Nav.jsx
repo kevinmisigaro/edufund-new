@@ -9,7 +9,7 @@ const navigation = [
   { name: "Products", href: "/Products" },
   { name: "Donate", href: "/donation" },
   { name: "Reports", href: "/reports" },
-  { name: "Apply Now", href: "/apply" },
+  // { name: "Apply Now", href: "/apply" },
   { name: "Fundraiser", href: "/fundraiser" },
 ];
 function Nav() {

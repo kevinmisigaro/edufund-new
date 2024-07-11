@@ -29,7 +29,7 @@ function Banner() {
                   Read the frequently asked questions
                 </span>
                 <span class="hidden md:inline">
-                  Launch Month! Help us raise $10k
+                  Read the frequently asked questions
                 </span>
               </p>
             </div>

@@ -55,7 +55,7 @@ function Home() {
           <Footer />
           <Banner/>
           <Toaster />
-          <CustomCursor />
+          {/* <CustomCursor /> */}
         </div>
       )}
     </>

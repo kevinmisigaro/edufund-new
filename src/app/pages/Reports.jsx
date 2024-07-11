@@ -2,7 +2,17 @@ import React from "react";
 import Nav from "../components/Nav";
 import Footer from "../sections/Footer";
 import PieChart from "../components/PieChart";
-
+import {
+  Drawer,
+  DrawerClose,
+  DrawerContent,
+  DrawerDescription,
+  DrawerFooter,
+  DrawerHeader,
+  DrawerTitle,
+  DrawerTrigger,
+} from "@/components/ui/drawer";
+import DonationForm from "../components/form/DonationForm";
 function Reports() {
   return (
     <div className="bg-pattern-bricks">
@@ -201,14 +211,37 @@ export function Hero() {
                     offering unique opportunities for women and vulnerable
                     population.
                   </p>
-                  <p className="text-slate-100">
+                  {/* <p className="text-slate-100">
                     <a
                       className="mt-4 button button--secondary text-slate-100"
                       href="#"
                     >
                       Donate now
                     </a>
-                  </p>
+                  </p> */}
+                  <Drawer className="bg-neutral-800  border-none outline-none">
+                    <DrawerTrigger asChild>
+                      <button className="button mt-4">
+                        Donate now
+                        <svg
+                          fill="currentColor"
+                          viewBox="0 0 24 24"
+                          className="icon"
+                        >
+                          <path
+                            clip-rule="evenodd"
+                            d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25zm4.28 10.28a.75.75 0 000-1.06l-3-3a.75.75 0 10-1.06 1.06l1.72 1.72H8.25a.75.75 0 000 1.5h5.69l-1.72 1.72a.75.75 0 101.06 1.06l3-3z"
+                            fill-rule="evenodd"
+                          ></path>
+                        </svg>
+                      </button>
+                    </DrawerTrigger>
+                    <DrawerContent className="bg-neutral-800 border-none outline-none">
+                      <div className="mx-auto w-full">
+                        <DonationForm />
+                      </div>
+                    </DrawerContent>
+                  </Drawer>
                 </div>
               </div>
             </div>

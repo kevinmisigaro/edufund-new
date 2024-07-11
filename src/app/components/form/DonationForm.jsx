@@ -7,6 +7,8 @@ import CountrySelector from "../CountrySelector";
 export const BASE_URL = "https://edufunddash.kibuti.co.tz/api/card-payment";
 
 function DonationForm() {
+  const [loading, setLoading] = useState(false);
+  const [buttonText, setButtonText] = useState("Donate now");
   const [formData, setFormData] = useState({
     firstName: "",
     lastName: "",
@@ -34,7 +36,8 @@ function DonationForm() {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-
+    setLoading(true);
+    setButtonText("Connecting...");
     const data = {
       amount: formData.amount,
       currency: formData.currency,
@@ -55,10 +58,17 @@ function DonationForm() {
 
     try {
       const response = await axios.post(BASE_URL, JSON.stringify(data));
+      setButtonText("Processing...");
+      setTimeout(() => {
+        setLoading(false);
+        setButtonText("Donate now");
+      }, 5000); // Simulate 5 seconds processing time
       window.location.href = response.data.data.paymentUrl;
       alerter("You'll be redirect to a payment page");
       console.log("The response is: ", response);
     } catch (error) {
+      setLoading(false);
+      setButtonText("Donate now");
       alerter("Error submitting the form. Please try again.");
       console.error("Form submission error: ", error);
       console.log("The data you have submitted:", data);
@@ -67,7 +77,7 @@ function DonationForm() {
 
   return (
     <form onSubmit={handleSubmit}>
-      <ScrollArea className="h-[36rem] border-none w-full rounded-md border">
+      <ScrollArea className="h-[32rem] md:h-[36rem] border-none w-full rounded-md border">
         <div className="bg-neutral-900/90 dark:bg-gray-900 h-[30%]">
           <div className="w-full outline-none max-w-3xl mx-auto p-4 md:p-8">
             <div className="bg-neutral-900/90 dark:bg-gray-800 p-8 rounded-lg shadow-md border dark:border-gray-700">
@@ -211,31 +221,41 @@ function DonationForm() {
                 </div>
               </div>
 
-              <div className="mt-8 flex flex-col-reverse gap-y-4 md:gap-y-0 md:flex-row items-center justify-evenly">
+             
+              <div className="mt-8 flex justify-end">
                 <button
                   type="submit"
-                  className="bg-purple-600/50 text-white px-12 md:px-6 py-3 rounded-lg font-semibold shadow-lg transform transition-transform hover:scale-105 hover:bg-neutral-700/30 dark:bg-teal-600 dark:text-white dark:hover:bg-teal-900 flex items-center"
+                  className="bg-purple-500 text-white px-4 py-2 rounded-lg hover:bg-purple-700 dark:bg-teal-600 dark:text-white dark:hover:bg-teal-900"
+                  onClick={handleSubmit}
+                  disabled={loading} // Disable button when loading
                 >
-                  <svg
-                    className="w-5 h-5 mr-2"
-                    fill="none"
-                    stroke="currentColor"
-                    strokeWidth="2"
-                    viewBox="0 0 24 24"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      d="M20 12H4"
-                    ></path>
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      d="M12 4l8 8-8 8"
-                    ></path>
-                  </svg>
-                  Donate now
+                  {loading ? (
+                    <div className="flex items-center">
+                      <svg
+                        className="animate-spin -ml-1 mr-3 h-5 w-5 text-white"
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                      >
+                        <circle
+                          className="opacity-25"
+                          cx="12"
+                          cy="12"
+                          r="10"
+                          stroke="currentColor"
+                          strokeWidth="4"
+                        ></circle>
+                        <path
+                          className="opacity-75"
+                          fill="currentColor"
+                          d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"
+                        ></path>
+                      </svg>
+                      {buttonText}
+                    </div>
+                  ) : (
+                    "Donate now"
+                  )}
                 </button>
               </div>
             </div>

@@ -6,9 +6,9 @@
   background-color: #f63f73;
   color: white;
 }
-body {
+/* body {
   cursor: none;
-}
+} */
 @layer base {
   :root {
     --background: 0 0% 100%;

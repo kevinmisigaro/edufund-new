@@ -38,7 +38,7 @@ function App() {
         <Route path="/fundraiser" element={<Fundraiser />} />
         <Route path="/Products" element={<Products />} />
       </Routes>
-      <CustomCursor />
+      {/* <CustomCursor /> */}
     </>
   );
 }
