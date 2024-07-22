@@ -78,8 +78,7 @@ export function Hero() {
               EduFund is making Quality Education
               <span class="text-sky-500 px-2">
                 more accessible for Africa’s
-              </span>{" "}
-              the
+              </span>
               <span class="text-sky-500 px-2">
                 most promising and underserved talents.
               </span>

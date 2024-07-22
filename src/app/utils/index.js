@@ -33,17 +33,17 @@ export const faqs = [
   {
     id: 1,
     question: "What is the duration for the fundraiser?",
-    answer: "The fundraiser will be on a rolling basis our current target is £10k  the first cycle will be by the 25th of July, 2024. "
+    answer: "The fundraiser will be on a rolling basis. Our current target is £10k  the first cycle will be awarded by the 20th of Aug, 2024. "
   },
   {
     id: 2,
     question: "When will applications for funding be open?",
-    answer: "Applications for funding will be open from the 15th of July, 2024"
+    answer: "Applications for funding will be open from the 29th of July, 2024."
   },
   {
     id: 3,
     question: "When would applicants be contacted?",
-    answer: "Applicants will be contacted 7 days after they apply"
+    answer: "Applicants will be contacted 7 days after they apply."
   },
   {
     id: 4,
@@ -58,7 +58,7 @@ export const faqs = [
   {
     id: 6,
     question: "Have any other questions?",
-    answer: "Contact us with this email: partnership@edufunds.co"
+    answer: `Contact us with this email: partnership@edufunds.co`
   }
 ];
 export const data = [
