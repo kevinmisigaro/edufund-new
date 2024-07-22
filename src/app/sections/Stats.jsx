@@ -23,13 +23,13 @@ function Stats() {
           </p>
           <ul className="text-slate-200 mb-4">
             <li className="mb-2">
-              <strong>Total Funds Raised:</strong> £1,000,000
+              <strong>Total Funds Raised:</strong> £1,000
             </li>
             <li className="mb-2">
               <strong>Funds Disbursed:</strong> £0
             </li>
             <li className="mb-2">
-              <strong>Remaining Funds:</strong> £1,000,000
+              <strong>Remaining Funds:</strong> £999,000
             </li>
             {/* <li className="mb-2">
               <strong>Funds Awarded:</strong> 1

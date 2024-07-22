@@ -49,7 +49,7 @@ function About() {
           <div>
             <h3 className="font-semibold text-xl">Comprehensive Support</h3>
             <p className="mt-1 text-slate-300">
-            Our tailored packages provide personalised point-of-need support to help students navigate financial hardships during their studies
+            Our tailored packages provide personalised point-of-need support to help students navigate financial hardships during their studies.
             </p>
           </div>
         </div>
@@ -75,7 +75,7 @@ function About() {
           <div>
             <h3 className="font-semibold text-xl">Diverse Opportunities</h3>
             <p className="mt-1 text-slate-300">
-              We offer a range of financial supports tailored to different
+              We offer a range of financial support tailored to different
               fields of study, ensuring that every student can find support that
               fits their needs.
             </p>
@@ -112,7 +112,7 @@ function About() {
             </h3>
             <p className="mt-1 text-slate-300">
               We believe in a fair and transparent selection process, ensuring
-              that all applicants have an equal opportunity to receive support.
+              that all applicants have equal opportunity to receive support.
             </p>
           </div>
         </div>

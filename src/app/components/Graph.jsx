@@ -3,7 +3,7 @@ import { PieChart, Pie, Sector } from "recharts";
 
 const data = [
   { name: "Donated", value: 0 },
-  { name: "Remaining", value: 1000000 },
+  { name: "Remaining", value: 999000 },
 ];
 
 const renderActiveShape = ({
