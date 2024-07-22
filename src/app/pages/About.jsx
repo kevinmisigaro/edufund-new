@@ -132,7 +132,7 @@ export function Hero() {
       title:
         "EduFund seeks to make quality education accessible for all Africans",
       description:
-        "EduFund is democratizing access to quality education for underserved young talents, with the aim of catalyzing Africa’s economy by enabling Africa’s young workforce to acquire relevant skills for future of work. Over 79% of Africa’s population are living below $6 per day, which puts higher education as a luxury concept to these communities. Our goal is to bring quality education to every deserving African talent, irrespective of social status, and create a generation of productive youths that become a driving force of the continent’s economy",
+        "EduFund is democratizing access to quality education for underserved young talents, with the aim of catalyzing Africa’s economy by enabling Africa’s young workforce to acquire relevant skills for future of work. Over 79% of Africa’s population are living below $6 per day, which makes higher education a luxury concept to these communities. Our goal is to bring quality education to every deserving African talent, irrespective of social status, and create a generation of productive youths that become a driving force of the continent’s economy.",
       link: "/scholarships",
       image: "https://images.unsplash.com/photo-1569144157591-c60f3f82f137",
       reverse: false,

@@ -17,7 +17,7 @@ const points = [
     ),
     title: "Setup Your Fundraiser",
     description:
-      "Complete your fundraiser information,including your compelling story,admission letter and amount your arefundraising. These information aremandatory for your fundraiser to beapproaved on EduFund. EduFund willreview your application and updateyour fundraiser status.",
+      "Complete your fundraiser information,including your compelling story, admission letter and amount you are fundraising. These information are mandatory for your fundraiser to be approaved on EduFund. EduFund will review your application and update your fundraiser status.",
   },
   {
     icon: (
@@ -37,7 +37,7 @@ const points = [
     ),
     title: "Raise Funds",
     description:
-      "Your campaign will be live and EduFund will share your fundraiser with our community of donors that will be eager to support you in your next big education moves. undraiser perform better when you share your campaign with your immediate community. Leverage on your community to boost your funding",
+      "Your campaign will be live and EduFund will share your fundraiser with our community of donors that will be eager to support you in your next big education moves. The fundraiser performs better when you share your campaign with your immediate community. Leverage on your community to boost your fundraising campaign.",
   },
   {
     icon: (
@@ -56,7 +56,7 @@ const points = [
     ),
     title: "Fund Disburement and Reporting",
     description:
-      "For transparency purposes, funds raised for university tuition fees is sent directly to your university, while funds raised for your upkeep will be sent to your bank account. This is to ensure that funds raised are specifically used for the intended purpose. You will be required to share updated with your donors every semester.",
+      "For transparency purposes, funds raised for university tuition fees will be sent directly to your university, while funds raised for your upkeep will be sent to your bank account. This is to ensure that funds raised are specifically used for the intended purpose. You will be required to share updates with your donors every semester.",
   },
 ];
 

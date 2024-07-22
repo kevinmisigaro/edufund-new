@@ -49,8 +49,7 @@ function About() {
           <div>
             <h3 className="font-semibold text-xl">Comprehensive Support</h3>
             <p className="mt-1 text-slate-300">
-              Our financial support program includes a support system to help
-              students navigate their academic journey.
+            Our tailored packages provide personalised point-of-need support to help students navigate financial hardships during their studies
             </p>
           </div>
         </div>

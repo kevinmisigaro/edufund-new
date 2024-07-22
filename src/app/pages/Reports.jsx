@@ -33,7 +33,7 @@ export function Card() {
     {
       title: "EduFund Crowdfunding",
       description:
-        "Individuals and institutions that are passionate about inclusive education and the future of Africa, have the opportunity to donate to the fund through EduFund platform. 200 or 2000 people donating $50 each annually will put one student to university every year. Onetrained talent will impact 1,000 lives inAfrica, and that is the impact our donorsare creating each time they donate to the fund. You can choose to make on offdonation or set a reoccurring donationeither per quarter or per year, tocontinue supporting the African dream",
+        "Individuals and institutions that are passionate about inclusive education and the future of Africa, have the opportunity to donate to the fund through EduFund platform. 200 or 2000 people donating $50 each annually will put one student to university every year. One trained talent will impact 1,000 lives in Africa, and that is the impact our donors are creating each time they donate to the fund. You can choose to make a one-off donation or set a reccurring donation either per quarter or per year, to continue supporting the African dream.",
       icon: (
         <svg
           viewBox="0 0 55 44"
@@ -51,7 +51,7 @@ export function Card() {
     {
       title: "Student Selection and Admission Support",
       description:
-        "Students from across Africa are eligible to signup on EduFund scholarship marketplace, where they fill out required information, including academic records, references, preferred course of student and university options. At the start of each academic year, EduFund selects 100 students from EduFund scholarship board (depending on the available fund), then carry out vetting process and send the pre- qualified list to the fund’s steering committee for approval. Upon approvals, EduFund will match the students to relevant universities.",
+        "Students from across Africa are eligible to signup on EduFund scholarship marketplace, where they fill out required information, including academic records, references, preferred course of student and university options. At the start of each academic year, EduFund selects 100 students from EduFund scholarship board (depending on the available fund), then carry out vetting process and send the pre-qualified list to the fund’s steering committee for approval. Upon approvals, EduFund will match the students to relevant universities.",
       icon: (
         <svg
           viewBox=" 0 0 48 48"
@@ -113,7 +113,7 @@ export function Card() {
     {
       title: "Fund Disbursement and Reporting",
       description:
-        "Upon completing admission processes, EduFund will disburse required fees (covering tuition, accommodation and other school related fees) to the university directly, to ensure the fund is used for the right course. Stipends will be disbursed to the student for welfare. EduFund collects important data every semester from our partner universities and beneficiary students, showing students performance, support areas and plans for the next semester. Our donors will be able to access these reports through their donor dashboard on EduFund",
+        "Upon completing admission processes, EduFund will disburse required fees (covering tuition, accommodation and other school related fees) to the university directly, to ensure the fund is used for the right cause. Stipends will be disbursed to the student for welfare. EduFund collects important data every semester from our partner universities and beneficiary students, showing students performance, support areas and plans for the next semester. Our donors will be able to access these reports through their donor dashboard on EduFund.",
       icon: (
         <svg
           viewBox="0 0 33 46"
@@ -632,7 +632,7 @@ export function Chart() {
                     We're grateful to all education champions that are
                     supporting and donating to our mission of bringing quality
                     education to Africa's talents to accelerate the continent's
-                    productive workforce
+                    productive workforce.
                   </p>
                   <p className="mt-4 text-slate-200">
                     The fund also implements a gender-lens and inclusion

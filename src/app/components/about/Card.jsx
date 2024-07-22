@@ -84,7 +84,7 @@ function Card() {
     {
       title: "Matching Grant",
       description:
-        "We work with universities and grant makers that offering partial scholarships and grants, and connect them with well vetted students on EduFund Marketplace. We make student sourcing easy for universities and grant makers by providing an already pre-qualified students that fits their scholarship/grant criteria",
+        "We work with universities and grant makers that offering partial scholarships and grants, and connect them with well-vetted students on EduFund Marketplace. We make student sourcing easy for universities and grantmakers by providing pre-qualified students that fit their scholarship/grant criteria.",
       icon: {
         style: {
           backgroundImage:

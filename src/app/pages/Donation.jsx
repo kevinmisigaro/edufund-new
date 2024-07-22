@@ -155,7 +155,7 @@ export function Services() {
     {
       title: "Set-up Dedicated Scholarship Platform",
       description:
-        "EduFund will set up a dedicated platform for the partners to manage the entire scholarship delivery value chain. Targeted students will apply to the scholarship through the white label platform",
+        "EduFund will set up a dedicated platform for the partners to manage the entire scholarship delivery value chain. Targeted students will apply to the scholarship through the white label platform.",
       icon: (
         <svg
           stroke="currentColor"
@@ -179,7 +179,7 @@ export function Services() {
     {
       title: "Student Recruitment and Matching to Universities",
       description:
-        "EduFund provides our partners with data centric application assessment tool, to aid partners in the selection process. Preselected students will be vetted and matched to relevant universities through EduFund",
+        "EduFund provides our partners with data-centric application assessment tool, to aid partners in the selection process. Preselected students will be vetted and matched to relevant universities through EduFund.",
       icon: (
         <svg
           stroke="currentColor"
@@ -203,7 +203,7 @@ export function Services() {
     {
       title: "Fund Disbursement to Universities",
       description:
-        "Upon completing admission processes, the partner will disburse required fees (covering students tuition, accommodation and other school related fees) to the university directly,to ensure the fund is used for the right course.Partners will also receive a summary scholarship report and recommendations",
+        "Upon completing admission processes, the partner will disburse required fees (covering students tuition, accommodation and other school related fees) to the university directly,to ensure the fund is used for the right course.Partners will also receive a summary scholarship report and recommendations.",
       icon: (
         <svg
           stroke="currentColor"
