@@ -79,7 +79,7 @@ export function Hero() {
               <span class="text-sky-500 px-2">
                 more accessible for Africa’s
               </span>
-              <span class="text-sky-500 px-2">
+              <span class="text-sky-500 pr-2">
                 most promising and underserved talents.
               </span>
             </h1>
