@@ -95,7 +95,7 @@ function Nav() {
         </div>
         <div className="hidden lg:flex lg:flex-1 lg:justify-end">
           <a
-            href="https://edufunddash.kibuti.co.tz/register"
+            href="https://dashboard.edufunds.co/register"
             target="_blank"
             className="text-sm font-semibold leading-6 text-white"
           >
