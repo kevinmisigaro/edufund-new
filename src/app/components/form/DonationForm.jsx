@@ -4,7 +4,7 @@ import { ScrollArea } from "@/components/ui/scroll-area";
 import { alerter, trimLeadingPlus, trimLeadingZero } from "@/app/utils";
 import CountrySelector from "../CountrySelector";
 
-export const BASE_URL = "https://edufunddash.kibuti.co.tz/api/card-payment";
+export const BASE_URL = "https://dashboard.edufunds.co/api/card-payment";
 
 function DonationForm() {
   const [loading, setLoading] = useState(false);
