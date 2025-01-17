@@ -12,7 +12,7 @@ import {
 import DonationForm from "../form/DonationForm";
 function Hero() {
   return (
-    <div className="h-screen  bg-pattern bg-gradient-to-b from-blue-900 to-blue-600 flex items-center">
+    <div className="h-screen bg-pattern bg-gradient-to-b from-blue-900 to-blue-600 flex items-center">
       <section
         className="w-full bg-cover bg-center py-32"
         // style={{

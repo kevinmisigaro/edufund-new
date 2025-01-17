@@ -12,6 +12,7 @@ import About from "./app/pages/About";
 import Donation from "./app/pages/Donation";
 import Reports from "./app/pages/Reports";
 import Products from "./app/pages/Products";
+import Eduquiz from "./app/pages/Eduquiz";
 
 function App() {
   useEffect(() => {
@@ -37,6 +38,7 @@ function App() {
         <Route path="*" element={<NotFound />} />
         <Route path="/fundraiser" element={<Fundraiser />} />
         <Route path="/Products" element={<Products />} />
+        <Route path="/eduquiz" element={<Eduquiz />} />
       </Routes>
       {/* <CustomCursor /> */}
     </>

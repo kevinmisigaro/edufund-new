@@ -11,6 +11,9 @@ const navigation = [
   { name: "Reports", href: "/reports" },
   // { name: "Apply Now", href: "/apply" },
   { name: "Fundraiser", href: "/fundraiser" },
+  {
+    name: "EduQuiz", href: "/eduquiz"
+  }
 ];
 function Nav() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
